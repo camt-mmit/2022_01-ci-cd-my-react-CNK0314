@@ -12,8 +12,8 @@ jobs:
         with: 
           token: ${{ github.token }}
     - uses: actions/setup-node@v3
-        with: 
-          node-version: "16"
+      with: 
+        node-version: "16"
     - run: |
         git config --global uer.email "${{ github.event.pusher.email }}"
         git config --global user.name "${{ github.actor }}"
