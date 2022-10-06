@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build project
-      run: PUBLIC_URL=/${{ gitub.event.repository.name }} npm run build 
+      run: PUBLIC_URL=/${{ github.event.repository.name }} npm run build 
     - name: Deploy gh-pages
       run: |
         mkdir -p ./dist/gh-pages
